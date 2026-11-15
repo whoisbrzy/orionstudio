@@ -1,14 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap");
-
 :root {
   --paper: #f7f6f2;
   --ink: #191919;
   --muted: #77756f;
   --line: rgba(25, 25, 25, .15);
   --lavender: #ebe8fd;
-  --mono: "DM Mono", "SFMono-Regular", Consolas, monospace;
-  --sans: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "DM Sans", sans-serif;
-  --serif: "Instrument Serif", Georgia, serif;
+  --mono: "SFMono-Regular", "SF Mono", Consolas, monospace;
+  --sans: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  --serif: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 * { box-sizing: border-box; }
