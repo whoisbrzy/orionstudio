@@ -15,7 +15,7 @@ var page = template.Must(template.New("home").Parse(`<!doctype html>
   <meta property="og:title" content="Orion Studio">
   <meta property="og:description" content="Thoughtful identities. Considered digital experiences.">
   <title>Orion Studio — Creative direction &amp; digital experiences</title>
-  <link rel="stylesheet" href="/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">\n  <link rel="stylesheet" href="/site.css">
   <script src="/site.js" defer></script>
 </head>
 <body>
