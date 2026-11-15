@@ -10,7 +10,7 @@ var page = template.Must(template.New("home").Parse(`<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ebe8fd">
+  <meta name="theme-color" content="#050505">
   <meta name="description" content="Orion Studio brings thoughtful identities and digital experiences to life.">
   <meta property="og:title" content="Orion Studio">
   <meta property="og:description" content="Thoughtful identities. Considered digital experiences.">
