@@ -1,14 +1,12 @@
 # ORION Studio
 
-Responsive creative-studio website built with HTML, CSS and JavaScript.
+A responsive, dark creative-studio website built with HTML, CSS and vanilla JavaScript.
 
 ## Run locally
-Open `index.html` in a browser, or run `python -m http.server 8000` from this directory.
+Open `index.html` in a browser or run `python -m http.server 8000`.
 
-## Before launch
-- Replace illustrative concept projects with real portfolio work.
-- Confirm the contact email and add the studio's social links.
-- Replace the typographic SVG mark in `assets/orion-mark.svg` with the final vector logo when available.
-- Add privacy/legal pages as required.
-
-Portfolio cards are illustrative concept directions, not claims of completed client work.
+## Notes
+- The site uses a black visual system, floating pill navigation, rounded service cards, animated typography, orbital logo motion, scroll reveals and responsive mobile navigation.
+- No fictional portfolio projects, client logos, testimonials or statistics are presented.
+- Update the contact email in `index.html` before launch if a different address should be used.
+- Google Fonts are loaded remotely; system fallbacks are included.
