@@ -25,7 +25,7 @@ var page = template.Must(template.New("home").Parse(`<!doctype html>
     <nav class="desktop-nav" aria-label="Main navigation">
       <a class="nav-link is-active" href="#studio">Studio</a><a class="nav-link" href="#capabilities">Capabilities</a><a class="nav-link" href="#approach">Approach</a><a class="nav-link" href="#contact">Contact</a>
     </nav>
-    <a class="nav-cta" href="#contact"><i></i> Have a project? ↗</a>
+    <a class="nav-cta" href="#contact">Have a project? ↗</a>
     <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
     <nav class="mobile-nav" aria-label="Mobile navigation" hidden>
       <a href="#studio">01 <span>Studio</span> ↗</a><a href="#capabilities">02 <span>Capabilities</span> ↗</a><a href="#approach">03 <span>Approach</span> ↗</a><a href="#contact">04 <span>Contact</span> ↗</a>
