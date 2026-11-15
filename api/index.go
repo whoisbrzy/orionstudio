@@ -33,14 +33,14 @@ var page = template.Must(template.New("home").Parse(`<!doctype html>
   </header>
   <main id="top">
     <section class="hero section-shell" id="studio">
-      <div class="hero-topline"><span>Independent creative studio</span><span>Thoughtful by design <i></i></span></div>
+      <div class="hero-topline"><span>Independent creative studio</span><span>Thoughtful by design</span></div>
       <div class="hero-content reveal">
-        <div><p class="eyebrow">✳ &nbsp; A considered point of view</p><h1>Make room<br>for <em>wonder.</em></h1></div>
+        <div><p class="eyebrow">A considered point of view</p><h1>Make room<br>for <em>wonder.</em></h1></div>
         <div class="hero-aside"><p>We shape identities and digital experiences for ideas with somewhere to go.</p><a class="text-link" href="#capabilities">Explore what we do ↘</a></div>
       </div>
       <div class="hero-art reveal">
-        <div class="art-topline"><span>ORION / 001</span><span>A considered point of view</span><span>EST. WITH INTENT</span></div>
-        <div class="art-composition"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-star">✳</div><div class="art-type">O<span>R</span>ION</div><div class="art-caption left">Ideas take<br>their own shape.</div><div class="art-caption right">Curiosity<br>is a practice.</div><div class="art-index">FIG. 01 — THE BEGINNING</div></div>
+        <div class="art-topline"><span>ORION / 001</span><span>A considered point of view</span><span>INDEPENDENT STUDIO</span></div>
+        <div class="art-composition"><div class="art-type">O<span>R</span>ION</div><div class="art-caption left">Ideas take<br>their own shape.</div><div class="art-caption right">Curiosity<br>is a practice.</div><div class="art-index">FIG. 01 — THE BEGINNING</div></div>
       </div>
       <div class="hero-bottomline"><span>Strategy / Identity / Digital</span><a href="#approach">Scroll to explore ↓</a></div>
     </section>
@@ -60,7 +60,7 @@ var page = template.Must(template.New("home").Parse(`<!doctype html>
     <section class="work section-shell" id="work">
       <div class="section-label"><span>03</span><i></i><span>Selected work</span></div>
       <div class="section-heading reveal"><h2>Made with <em>intention.</em></h2><p>Good work deserves to be shown properly. This space will grow with projects as they are completed and ready to share.</p></div>
-      <div class="work-placeholder reveal"><div class="placeholder-symbol">✳</div><div><small>A space for what comes next</small><h3>Work in progress.</h3><p>We’re shaping the first collection. Check back soon.</p></div><span class="count">001 — ∞</span></div>
+      <div class="work-placeholder reveal"><div class="placeholder-symbol">Ω</div><div><small>A space for what comes next</small><h3>Work in progress.</h3><p>We’re shaping the first collection. Check back soon.</p></div><span class="count">001 — ∞</span></div>
     </section>
     <section class="approach section-shell" id="approach">
       <div class="section-label"><span>04</span><i></i><span>How we think</span></div>
