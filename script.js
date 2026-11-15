@@ -1,10 +1,7 @@
 const menu=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav-pill");
-menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));});
-nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");menu.setAttribute("aria-expanded","false");}));
+if(menu&&nav){menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));});nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");menu.setAttribute("aria-expanded","false");}));}
 const header=document.querySelector(".site-header"),progress=document.querySelector(".page-progress");
-function onScroll(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+"%";header.classList.toggle("scrolled",scrollY>24);}
+function onScroll(){const max=document.documentElement.scrollHeight-innerHeight;if(progress)progress.style.width=(max>0?scrollY/max*100:0)+"%";if(header)header.classList.toggle("scrolled",scrollY>24);}
 window.addEventListener("scroll",onScroll,{passive:true});onScroll();
-const revealTargets=document.querySelectorAll(".intro-layout,.services-intro,.service-row,.process-grid article,.faq-list details,.contact-main");
-revealTargets.forEach(el=>el.classList.add("fade-up"));
-const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("in-view");observer.unobserve(entry.target);}}),{threshold:.12});
-revealTargets.forEach(el=>observer.observe(el));
+const revealTargets=document.querySelectorAll(".intro-layout,.services-intro,.service-row,.process-grid article,.faq-list details,.contact-main,.selected-head,.featured-work,.inner-copy,.values-grid article,.service-page-list article,.pricing-panel,.work-editorial,.contact-details");
+if("IntersectionObserver" in window){revealTargets.forEach(el=>el.classList.add("fade-up"));const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("in-view");observer.unobserve(entry.target);}}),{threshold:.12});revealTargets.forEach(el=>observer.observe(el));}else revealTargets.forEach(el=>el.classList.add("in-view"));
