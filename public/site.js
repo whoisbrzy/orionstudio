@@ -1,4 +1,15 @@
 (() => {
+  const glassHeader = document.querySelector(".site-header");
+  if (glassHeader && window.matchMedia("(pointer: fine)").matches) {
+    glassHeader.addEventListener("pointermove", (event) => {
+      const rect = glassHeader.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width) * 100;
+      const y = ((event.clientY - rect.top) / rect.height) * 100;
+      glassHeader.style.setProperty("--glass-x", x + "%");
+      glassHeader.style.setProperty("--glass-y", y + "%");
+    }, { passive: true });
+  }
+
   const menuButton = document.querySelector(".menu-toggle");
   const mobileNav = document.querySelector(".mobile-nav");
 
