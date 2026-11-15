@@ -34,7 +34,7 @@ export default function Home() {
       <section className="hero section-shell" id="studio">
         <div className="hero-topline">
           <span>Independent creative studio</span>
-          <span className="hero-location">Available for select projects <i /></span>
+          <span className="hero-location">Independent creative studio <i /></span>
         </div>
 
         <div className="hero-content">
@@ -147,7 +147,7 @@ export default function Home() {
           <Reveal><h2>Let’s make<br /><span className="serif-word">something</span><br />meaningful.</h2></Reveal>
           <div className="contact-bottom">
             <p>Have a thought, a brief, or just a good question? We’d love to hear where it leads.</p>
-            <a className="contact-link" href="mailto:hello@orionstudio.design">Get in touch <ArrowUpRight size={18} /></a>
+            <span className="contact-link contact-link--pending">Contact details coming soon</span>
           </div>
         </div>
       </section>
