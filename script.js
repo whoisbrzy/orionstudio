@@ -1,4 +1,10 @@
-const loader=document.querySelector(".loader");window.addEventListener("load",()=>setTimeout(()=>loader.classList.add("done"),650));
-const menu=document.querySelector(".mobile-menu"),nav=document.querySelector(".pill-nav");menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menu.setAttribute("aria-expanded","false");}));
-const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}}),{threshold:.14});document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
-const magnetic=document.querySelector(".contact-pill");magnetic.addEventListener("pointermove",e=>{if(matchMedia("(pointer:fine)").matches){const r=magnetic.getBoundingClientRect(),x=e.clientX-r.left-r.width/2,y=e.clientY-r.top-r.height/2;magnetic.style.transform=`translate(${x*.12}px,${y*.12}px) rotate(-8deg)`;}});magnetic.addEventListener("pointerleave",()=>magnetic.style.transform="");
+const menu=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav-pill");
+menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));});
+nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");menu.setAttribute("aria-expanded","false");}));
+const header=document.querySelector(".site-header"),progress=document.querySelector(".page-progress");
+function onScroll(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+"%";header.classList.toggle("scrolled",scrollY>24);}
+window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+const revealTargets=document.querySelectorAll(".intro-layout,.services-intro,.service-row,.process-grid article,.faq-list details,.contact-main");
+revealTargets.forEach(el=>el.classList.add("fade-up"));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("in-view");observer.unobserve(entry.target);}}),{threshold:.12});
+revealTargets.forEach(el=>observer.observe(el));
