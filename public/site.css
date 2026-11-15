@@ -29,3 +29,5 @@ a:focus-visible,button:focus-visible{outline:2px solid #050505;outline-offset:4p
 @media(prefers-reduced-transparency:reduce){.site-header,.mobile-nav:not([hidden]){background:rgba(255,255,255,.97);-webkit-backdrop-filter:none;backdrop-filter:none}.site-header:before{display:none}.art-composition:before{background:#f1f1f1;backdrop-filter:none;-webkit-backdrop-filter:none}}
 @media(prefers-contrast:more){.site-header,.mobile-nav:not([hidden]){background:#fff;border:1px solid #000;backdrop-filter:none;-webkit-backdrop-filter:none}.nav-link.is-active{border:1px solid #000;box-shadow:none}}
 @media(prefers-reduced-motion:reduce){.site-header,.mobile-nav:not([hidden]){animation:none}.site-header,.nav-link,.nav-cta,.menu-toggle,.capability,.text-link{transition:none}}
+
+/* Design review principles informed by unslop by Damir Sokolovsky, CC BY 4.0: https://github.com/heydamir/unslop */
